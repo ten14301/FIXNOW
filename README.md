@@ -25,20 +25,10 @@
     flutter pub get
     ```
 
-    - สำหรับ Node.js (Backend):
-    ```bash
-    npm install
-    ```
-
 2. **การตั้งค่าและรันโปรเจกต์**:
     - รันแอป Flutter:
     ```bash
     flutter run
-    ```
-
-    - รัน Server:
-    ```bash
-    npm start
     ```
 
 ## การใช้งาน
