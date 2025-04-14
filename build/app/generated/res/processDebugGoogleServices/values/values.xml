@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">448799022970</string>
+    <string name="google_api_key" translatable="false">AIzaSyAAbBwz0KXw-pNes22wJ4QvSQPbEL7k8Uo</string>
+    <string name="google_app_id" translatable="false">1:448799022970:android:f8e8c761a8c30a88afc0c3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAAbBwz0KXw-pNes22wJ4QvSQPbEL7k8Uo</string>
+    <string name="google_storage_bucket" translatable="false">fixnow-93c5c.firebasestorage.app</string>
+    <string name="project_id" translatable="false">fixnow-93c5c</string>
+</resources>

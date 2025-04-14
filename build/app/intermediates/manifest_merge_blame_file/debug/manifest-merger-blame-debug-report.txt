@@ -1,0 +1,556 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.fixnow"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:7:5-66
+15-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:7:22-64
+16    <!-- Permissions -->
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:6:5-64
+17-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:6:22-62
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:8:5-78
+18-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:8:22-76
+19    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+19-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:9:5-80
+19-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:9:22-78
+20    <uses-permission android:name="android.permission.VIBRATE" />
+20-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:10:5-65
+20-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:10:22-63
+21    <uses-permission
+21-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:11:5-80
+22        android:name="android.permission.READ_EXTERNAL_STORAGE"
+22-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:11:22-77
+23        android:maxSdkVersion="32" />
+23-->[:file_picker] C:\Users\ten07\OneDrive\Desktop\fixnow\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-35
+24    <uses-permission
+24-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:12:1-77
+25        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+25-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:12:18-74
+26        android:maxSdkVersion="28" />
+26-->[:camera_android_camerax] C:\Users\ten07\OneDrive\Desktop\fixnow\build\camera_android_camerax\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-35
+27    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+27-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:14:5-15:40
+27-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:14:22-79
+28
+29    <uses-feature
+29-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:17:5-83
+30        android:name="android.hardware.camera"
+30-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:17:19-57
+31        android:required="true" />
+31-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:17:58-81
+32
+33    <queries>
+33-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:61:5-66:15
+34        <intent>
+34-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:62:9-65:18
+35            <action android:name="android.intent.action.PROCESS_TEXT" />
+35-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:63:13-72
+35-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:63:21-70
+36
+37            <data android:mimeType="text/plain" />
+37-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:64:13-50
+37-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:64:19-48
+38        </intent>
+39        <intent>
+39-->[:file_picker] C:\Users\ten07\OneDrive\Desktop\fixnow\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:18
+40            <action android:name="android.intent.action.GET_CONTENT" />
+40-->[:file_picker] C:\Users\ten07\OneDrive\Desktop\fixnow\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-72
+40-->[:file_picker] C:\Users\ten07\OneDrive\Desktop\fixnow\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:21-69
+41
+42            <data android:mimeType="*/*" />
+42-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:64:13-50
+42-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:64:19-48
+43        </intent>
+44    </queries>
+45
+46    <uses-feature android:name="android.hardware.camera.any" />
+46-->[:camera_android_camerax] C:\Users\ten07\OneDrive\Desktop\fixnow\build\camera_android_camerax\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-64
+46-->[:camera_android_camerax] C:\Users\ten07\OneDrive\Desktop\fixnow\build\camera_android_camerax\intermediates\merged_manifest\debug\AndroidManifest.xml:7:19-61
+47
+48    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+48-->[:camera_android_camerax] C:\Users\ten07\OneDrive\Desktop\fixnow\build\camera_android_camerax\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-71
+48-->[:camera_android_camerax] C:\Users\ten07\OneDrive\Desktop\fixnow\build\camera_android_camerax\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-68
+49    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions options for the `notification` group -->
+49-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
+49-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-65
+50    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+50-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-77
+50-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-74
+51    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+51-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:26:5-82
+51-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:26:22-79
+52
+53    <permission
+53-->[androidx.core:core:1.13.1] C:\Users\ten07\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+54        android:name="com.example.fixnow.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+54-->[androidx.core:core:1.13.1] C:\Users\ten07\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+55        android:protectionLevel="signature" />
+55-->[androidx.core:core:1.13.1] C:\Users\ten07\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+56
+57    <uses-permission android:name="com.example.fixnow.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+57-->[androidx.core:core:1.13.1] C:\Users\ten07\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+57-->[androidx.core:core:1.13.1] C:\Users\ten07\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+58
+59    <application
+59-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:19:5-59:19
+60        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+60-->[androidx.core:core:1.13.1] C:\Users\ten07\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+61        android:debuggable="true"
+62        android:extractNativeLibs="true"
+63        android:icon="@mipmap/ic_launcher"
+63-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:22:9-43
+64        android:label="fixnow"
+64-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:21:9-31
+65        android:usesCleartextTraffic="true" >
+65-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:20:9-44
+66
+67        <!-- FileProvider -->
+68        <provider
+68-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:25:9-33:20
+69            android:name="androidx.core.content.FileProvider"
+69-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:26:13-62
+70            android:authorities="com.example.fixnow.fileprovider"
+70-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:27:13-66
+71            android:exported="false"
+71-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:29:13-37
+72            android:grantUriPermissions="true" >
+72-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:28:13-47
+73            <meta-data
+73-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:30:13-32:57
+74                android:name="android.support.FILE_PROVIDER_PATHS"
+74-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:31:17-67
+75                android:resource="@xml/provider_paths" />
+75-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:32:17-55
+76        </provider>
+77
+78        <!-- MainActivity -->
+79        <activity
+79-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:36:9-54:20
+80            android:name="com.example.fixnow.MainActivity"
+80-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:37:13-41
+81            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+81-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:42:13-163
+82            android:exported="true"
+82-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:38:13-36
+83            android:hardwareAccelerated="true"
+83-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:43:13-47
+84            android:launchMode="singleTop"
+84-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:39:13-43
+85            android:taskAffinity=""
+85-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:40:13-36
+86            android:theme="@style/LaunchTheme"
+86-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:41:13-47
+87            android:windowSoftInputMode="adjustResize" >
+87-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:44:13-55
+88            <meta-data
+88-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:46:13-48:56
+89                android:name="io.flutter.embedding.android.NormalTheme"
+89-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:47:17-72
+90                android:resource="@style/NormalTheme" />
+90-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:48:17-54
+91
+92            <intent-filter>
+92-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:50:13-53:29
+93                <action android:name="android.intent.action.MAIN" />
+93-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:51:17-68
+93-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:51:25-66
+94
+95                <category android:name="android.intent.category.LAUNCHER" />
+95-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:52:17-76
+95-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:52:27-74
+96            </intent-filter>
+97        </activity>
+98
+99        <meta-data
+99-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:56:9-58:33
+100            android:name="flutterEmbedding"
+100-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:57:13-44
+101            android:value="2" />
+101-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:58:13-30
+102
+103        <service
+103-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
+104            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+104-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
+105            android:exported="false"
+105-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+106            android:permission="android.permission.BIND_JOB_SERVICE" />
+106-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
+107        <service
+107-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
+108            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+108-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
+109            android:exported="false" >
+109-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
+110            <intent-filter>
+110-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+111                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+111-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+111-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+112            </intent-filter>
+113        </service>
+114
+115        <receiver
+115-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
+116            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+116-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
+117            android:exported="true"
+117-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
+118            android:permission="com.google.android.c2dm.permission.SEND" >
+118-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
+119            <intent-filter>
+119-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+120                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+120-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+120-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+121            </intent-filter>
+122        </receiver>
+123
+124        <service
+124-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:35:9-39:19
+125            android:name="com.google.firebase.components.ComponentDiscoveryService"
+125-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:35:18-89
+126            android:directBootAware="true"
+126-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ten07\.gradle\caches\transforms-3\abd144767df15dffddd52de2fe329b95\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+127            android:exported="false" >
+127-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:56:13-37
+128            <meta-data
+128-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
+129                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+129-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
+131            <meta-data
+131-->[:firebase_core] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+132                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+132-->[:firebase_core] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[:firebase_core] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:57:13-59:85
+135                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+135-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:58:17-122
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:59:17-82
+137            <meta-data
+137-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:60:13-62:85
+138                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+138-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:61:17-119
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:62:17-82
+140            <meta-data
+140-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\ten07\.gradle\caches\transforms-3\0d4a00debe7102074e4cebb1b35f958f\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+141                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+141-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\ten07\.gradle\caches\transforms-3\0d4a00debe7102074e4cebb1b35f958f\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\ten07\.gradle\caches\transforms-3\0d4a00debe7102074e4cebb1b35f958f\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+143            <meta-data
+143-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\ten07\.gradle\caches\transforms-3\8301937e2a7dc5f887952c224214a568\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+144                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+144-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\ten07\.gradle\caches\transforms-3\8301937e2a7dc5f887952c224214a568\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+145                android:value="com.google.firebase.components.ComponentRegistrar" />
+145-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\ten07\.gradle\caches\transforms-3\8301937e2a7dc5f887952c224214a568\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+146            <meta-data
+146-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\ten07\.gradle\caches\transforms-3\8301937e2a7dc5f887952c224214a568\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+147                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+147-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\ten07\.gradle\caches\transforms-3\8301937e2a7dc5f887952c224214a568\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+148                android:value="com.google.firebase.components.ComponentRegistrar" />
+148-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\ten07\.gradle\caches\transforms-3\8301937e2a7dc5f887952c224214a568\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+149            <meta-data
+149-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\ten07\.gradle\caches\transforms-3\de1f68a58916d382e87cebe6de5ae38f\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+150                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+150-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\ten07\.gradle\caches\transforms-3\de1f68a58916d382e87cebe6de5ae38f\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+151                android:value="com.google.firebase.components.ComponentRegistrar" />
+151-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\ten07\.gradle\caches\transforms-3\de1f68a58916d382e87cebe6de5ae38f\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+152            <meta-data
+152-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ten07\.gradle\caches\transforms-3\abd144767df15dffddd52de2fe329b95\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+153                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+153-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ten07\.gradle\caches\transforms-3\abd144767df15dffddd52de2fe329b95\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+154                android:value="com.google.firebase.components.ComponentRegistrar" />
+154-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ten07\.gradle\caches\transforms-3\abd144767df15dffddd52de2fe329b95\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+155            <meta-data
+155-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\ten07\.gradle\caches\transforms-3\636536ee7608b1ae673f2bf93e875eef\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:25:13-27:85
+156                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+156-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\ten07\.gradle\caches\transforms-3\636536ee7608b1ae673f2bf93e875eef\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:26:17-115
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\ten07\.gradle\caches\transforms-3\636536ee7608b1ae673f2bf93e875eef\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
+158        </service>
+159
+160        <provider
+160-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
+161            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+161-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
+162            android:authorities="com.example.fixnow.flutterfirebasemessaginginitprovider"
+162-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
+163            android:exported="false"
+163-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
+164            android:initOrder="99" />
+164-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
+165        <provider
+165-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-17:20
+166            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+166-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-82
+167            android:authorities="com.example.fixnow.flutter.image_provider"
+167-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+168            android:exported="false"
+168-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+169            android:grantUriPermissions="true" >
+169-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-47
+170            <meta-data
+170-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:30:13-32:57
+171                android:name="android.support.FILE_PROVIDER_PATHS"
+171-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:31:17-67
+172                android:resource="@xml/flutter_image_picker_file_paths" />
+172-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:32:17-55
+173        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+174        <service
+174-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-31:19
+175            android:name="com.google.android.gms.metadata.ModuleDependencies"
+175-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-78
+176            android:enabled="false"
+176-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-36
+177            android:exported="false" >
+177-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+178            <intent-filter>
+178-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-26:29
+179                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+179-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-94
+179-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:25:25-91
+180            </intent-filter>
+181
+182            <meta-data
+182-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-30:36
+183                android:name="photopicker_activity:0:required"
+183-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-63
+184                android:value="" />
+184-->[:image_picker_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:30:17-33
+185        </service>
+186
+187        <provider
+187-->[:open_file_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\open_file_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-19:20
+188            android:name="com.crazecoder.openfile.FileProvider"
+188-->[:open_file_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\open_file_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-64
+189            android:authorities="com.example.fixnow.fileProvider.com.crazecoder.openfile"
+189-->[:open_file_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\open_file_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-88
+190            android:exported="false"
+190-->[:open_file_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\open_file_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+191            android:grantUriPermissions="true"
+191-->[:open_file_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\open_file_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-47
+192            android:requestLegacyExternalStorage="true" >
+192-->[:open_file_android] C:\Users\ten07\OneDrive\Desktop\fixnow\build\open_file_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-56
+193            <meta-data
+193-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:30:13-32:57
+194                android:name="android.support.FILE_PROVIDER_PATHS"
+194-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:31:17-67
+195                android:resource="@xml/filepaths" />
+195-->C:\Users\ten07\OneDrive\Desktop\fixnow\android\app\src\main\AndroidManifest.xml:32:17-55
+196        </provider>
+197
+198        <receiver
+198-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:29:9-40:20
+199            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+199-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:30:13-78
+200            android:exported="true"
+200-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:31:13-36
+201            android:permission="com.google.android.c2dm.permission.SEND" >
+201-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:32:13-73
+202            <intent-filter>
+202-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+203                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+203-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+203-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+204            </intent-filter>
+205
+206            <meta-data
+206-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:37:13-39:40
+207                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+207-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:38:17-92
+208                android:value="true" />
+208-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:39:17-37
+209        </receiver>
+210        <!--
+211             FirebaseMessagingService performs security checks at runtime,
+212             but set to not exported to explicitly avoid allowing another app to call it.
+213        -->
+214        <service
+214-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:46:9-53:19
+215            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+215-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:47:13-82
+216            android:directBootAware="true"
+216-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:48:13-43
+217            android:exported="false" >
+217-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\ten07\.gradle\caches\transforms-3\c9cec22d791875838207ab4413344dac\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:49:13-37
+218            <intent-filter android:priority="-500" >
+218-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+219                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+219-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+219-->[:firebase_messaging] C:\Users\ten07\OneDrive\Desktop\fixnow\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+220            </intent-filter>
+221        </service>
+222        <service
+222-->[androidx.camera:camera-camera2:1.3.4] C:\Users\ten07\.gradle\caches\transforms-3\cef670aba70a9bbd0213de4d34065298\transformed\jetified-camera-camera2-1.3.4\AndroidManifest.xml:24:9-33:19
+223            android:name="androidx.camera.core.impl.MetadataHolderService"
+223-->[androidx.camera:camera-camera2:1.3.4] C:\Users\ten07\.gradle\caches\transforms-3\cef670aba70a9bbd0213de4d34065298\transformed\jetified-camera-camera2-1.3.4\AndroidManifest.xml:25:13-75
+224            android:enabled="false"
+224-->[androidx.camera:camera-camera2:1.3.4] C:\Users\ten07\.gradle\caches\transforms-3\cef670aba70a9bbd0213de4d34065298\transformed\jetified-camera-camera2-1.3.4\AndroidManifest.xml:26:13-36
+225            android:exported="false" >
+225-->[androidx.camera:camera-camera2:1.3.4] C:\Users\ten07\.gradle\caches\transforms-3\cef670aba70a9bbd0213de4d34065298\transformed\jetified-camera-camera2-1.3.4\AndroidManifest.xml:27:13-37
+226            <meta-data
+226-->[androidx.camera:camera-camera2:1.3.4] C:\Users\ten07\.gradle\caches\transforms-3\cef670aba70a9bbd0213de4d34065298\transformed\jetified-camera-camera2-1.3.4\AndroidManifest.xml:30:13-32:89
+227                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+227-->[androidx.camera:camera-camera2:1.3.4] C:\Users\ten07\.gradle\caches\transforms-3\cef670aba70a9bbd0213de4d34065298\transformed\jetified-camera-camera2-1.3.4\AndroidManifest.xml:31:17-103
+228                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+228-->[androidx.camera:camera-camera2:1.3.4] C:\Users\ten07\.gradle\caches\transforms-3\cef670aba70a9bbd0213de4d34065298\transformed\jetified-camera-camera2-1.3.4\AndroidManifest.xml:32:17-86
+229        </service>
+230
+231        <activity
+231-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ten07\.gradle\caches\transforms-3\6dadd0bfa2d44ddeab91e958645034df\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+232            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+232-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ten07\.gradle\caches\transforms-3\6dadd0bfa2d44ddeab91e958645034df\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+233            android:exported="false"
+233-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ten07\.gradle\caches\transforms-3\6dadd0bfa2d44ddeab91e958645034df\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+234            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+234-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ten07\.gradle\caches\transforms-3\6dadd0bfa2d44ddeab91e958645034df\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+235
+236        <provider
+236-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ten07\.gradle\caches\transforms-3\abd144767df15dffddd52de2fe329b95\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+237            android:name="com.google.firebase.provider.FirebaseInitProvider"
+237-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ten07\.gradle\caches\transforms-3\abd144767df15dffddd52de2fe329b95\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+238            android:authorities="com.example.fixnow.firebaseinitprovider"
+238-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ten07\.gradle\caches\transforms-3\abd144767df15dffddd52de2fe329b95\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+239            android:directBootAware="true"
+239-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ten07\.gradle\caches\transforms-3\abd144767df15dffddd52de2fe329b95\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+240            android:exported="false"
+240-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ten07\.gradle\caches\transforms-3\abd144767df15dffddd52de2fe329b95\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+241            android:initOrder="100" />
+241-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ten07\.gradle\caches\transforms-3\abd144767df15dffddd52de2fe329b95\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+242
+243        <uses-library
+243-->[androidx.window:window:1.2.0] C:\Users\ten07\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+244            android:name="androidx.window.extensions"
+244-->[androidx.window:window:1.2.0] C:\Users\ten07\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+245            android:required="false" />
+245-->[androidx.window:window:1.2.0] C:\Users\ten07\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+246        <uses-library
+246-->[androidx.window:window:1.2.0] C:\Users\ten07\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+247            android:name="androidx.window.sidecar"
+247-->[androidx.window:window:1.2.0] C:\Users\ten07\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+248            android:required="false" />
+248-->[androidx.window:window:1.2.0] C:\Users\ten07\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+249
+250        <provider
+250-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ten07\.gradle\caches\transforms-3\d3559f99e4813a171b5493c8f32a3eaf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+251            android:name="androidx.startup.InitializationProvider"
+251-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ten07\.gradle\caches\transforms-3\d3559f99e4813a171b5493c8f32a3eaf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+252            android:authorities="com.example.fixnow.androidx-startup"
+252-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ten07\.gradle\caches\transforms-3\d3559f99e4813a171b5493c8f32a3eaf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+253            android:exported="false" >
+253-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ten07\.gradle\caches\transforms-3\d3559f99e4813a171b5493c8f32a3eaf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+254            <meta-data
+254-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ten07\.gradle\caches\transforms-3\d3559f99e4813a171b5493c8f32a3eaf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+255                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+255-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ten07\.gradle\caches\transforms-3\d3559f99e4813a171b5493c8f32a3eaf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+256                android:value="androidx.startup" />
+256-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ten07\.gradle\caches\transforms-3\d3559f99e4813a171b5493c8f32a3eaf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+257            <meta-data
+257-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ten07\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+258                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+258-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ten07\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+259                android:value="androidx.startup" />
+259-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ten07\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+260            <meta-data
+260-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+261                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+261-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+262                android:value="androidx.startup" />
+262-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+263        </provider>
+264
+265        <meta-data
+265-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\ten07\.gradle\caches\transforms-3\96004e15647bc525170b7742251f128d\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+266            android:name="com.google.android.gms.version"
+266-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\ten07\.gradle\caches\transforms-3\96004e15647bc525170b7742251f128d\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+267            android:value="@integer/google_play_services_version" />
+267-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\ten07\.gradle\caches\transforms-3\96004e15647bc525170b7742251f128d\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+268
+269        <service
+269-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\ten07\.gradle\caches\transforms-3\49139f909feaf4197e9a8719ee8d0c41\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+270            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+270-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\ten07\.gradle\caches\transforms-3\49139f909feaf4197e9a8719ee8d0c41\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+271            android:exported="false" >
+271-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\ten07\.gradle\caches\transforms-3\49139f909feaf4197e9a8719ee8d0c41\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+272            <meta-data
+272-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\ten07\.gradle\caches\transforms-3\49139f909feaf4197e9a8719ee8d0c41\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+273                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+273-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\ten07\.gradle\caches\transforms-3\49139f909feaf4197e9a8719ee8d0c41\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+274                android:value="cct" />
+274-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\ten07\.gradle\caches\transforms-3\49139f909feaf4197e9a8719ee8d0c41\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+275        </service>
+276        <service
+276-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ten07\.gradle\caches\transforms-3\f5f90e60379587ee4c03021808a245c2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+277            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+277-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ten07\.gradle\caches\transforms-3\f5f90e60379587ee4c03021808a245c2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+278            android:exported="false"
+278-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ten07\.gradle\caches\transforms-3\f5f90e60379587ee4c03021808a245c2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+279            android:permission="android.permission.BIND_JOB_SERVICE" >
+279-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ten07\.gradle\caches\transforms-3\f5f90e60379587ee4c03021808a245c2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+280        </service>
+281
+282        <receiver
+282-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ten07\.gradle\caches\transforms-3\f5f90e60379587ee4c03021808a245c2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+283            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+283-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ten07\.gradle\caches\transforms-3\f5f90e60379587ee4c03021808a245c2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+284            android:exported="false" />
+284-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ten07\.gradle\caches\transforms-3\f5f90e60379587ee4c03021808a245c2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+285        <receiver
+285-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+286            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+286-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+287            android:directBootAware="false"
+287-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+288            android:enabled="true"
+288-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+289            android:exported="true"
+289-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+290            android:permission="android.permission.DUMP" >
+290-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+291            <intent-filter>
+291-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+292                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+292-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+292-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+293            </intent-filter>
+294            <intent-filter>
+294-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+295                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+295-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+295-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+296            </intent-filter>
+297            <intent-filter>
+297-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+298                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+298-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+298-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+299            </intent-filter>
+300            <intent-filter>
+300-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+301                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+301-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+301-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ten07\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+302            </intent-filter>
+303        </receiver>
+304    </application>
+305
+306</manifest>
